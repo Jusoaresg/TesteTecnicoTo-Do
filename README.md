@@ -26,6 +26,6 @@ estejam corretas e evitar erros (ex.: uma tarefa não pode ter título vazio).
 - [x] Front-end ligado a API
 - [x] Validação de dados no Front-end
 - [x] Tarefas utilizando o cache do redis
-- [ ] Usuarios utilizando o caceh do redis
+- [ ] Usuarios utilizando o cache do redis
 - [ ] Deploy na nuvem (Infelizmente não consegui pegar nenhuma)
 - [ ] Deslogar usuario quando o token expirar
