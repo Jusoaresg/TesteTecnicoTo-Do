@@ -18,6 +18,28 @@ armazenar as tarefas de maneira persistente.
 - Implemente validação de dados para garantir que as informações das tarefas
 estejam corretas e evitar erros (ex.: uma tarefa não pode ter título vazio).
 
+## Configuração do ambiente
+
+O projeto necessita do redis, postgres e uma dotenv na raiz do backend
+
+Estrutura do dotenv:
+
+`
+HOST=*
+PORT=*
+DATABASE=*
+USER=*
+PASSWORD=*
+
+
+SECRET_KEY=*
+ALGORITHM=*
+ACCESS_TOKEN_EXPIRE_MINUTES=*
+
+REDIS_HOST=*
+REDIS_PORT=*
+`
+
 ## TO-DO-LIST
 - [x] API com CRUD de usuarios e tarefas
 - [x] Banco de dados relacional (Postgres)
