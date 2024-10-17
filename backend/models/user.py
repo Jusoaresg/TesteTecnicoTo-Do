@@ -1,6 +1,9 @@
 import bcrypt
 import uuid
 from database.connection import get_cursor
+from cache.redis import RedisCache, set_to_cache, get_from_cache
+
+redis_cache = RedisCache()
 
 class User:
     def __init__(self, name, email, password, id=None):
@@ -31,6 +34,8 @@ class User:
 
     @staticmethod
     def get_all_users():
+
+
         try:
             with get_cursor() as cursor:
 
@@ -46,7 +51,7 @@ class User:
             print(f"Can't get all users: {e}")
 
     @staticmethod
-    def get_user(id: str):
+    async def get_user(id: str):
         try:
             with get_cursor() as cursor:
                 cursor.execute(
@@ -56,6 +61,7 @@ class User:
                 )
                 result = cursor.fetchone()
                 user = User(result[1], result[2], result[3], result[0])
+
                 return user
 
         except Exception as e:
