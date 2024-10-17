@@ -24,7 +24,7 @@ O projeto necessita do redis, postgres e uma dotenv na raiz do backend
 
 Estrutura do dotenv:
 
-`
+```
 HOST=*
 PORT=*
 DATABASE=*
@@ -38,7 +38,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES=*
 
 REDIS_HOST=*
 REDIS_PORT=*
-`
+```
 
 ## TO-DO-LIST
 - [x] API com CRUD de usuarios e tarefas
