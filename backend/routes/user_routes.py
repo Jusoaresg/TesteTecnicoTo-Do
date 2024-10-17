@@ -26,7 +26,6 @@ async def register_user(name, email, password):
 @router.post("/login")
 async def login_user(response: Response, form: OAuth2PasswordRequestForm = Depends()):
 
-    #Pega o email
     usr = user.User.get_user_email(form.username)
     print(usr.id)
 
@@ -40,7 +39,6 @@ async def login_user(response: Response, form: OAuth2PasswordRequestForm = Depen
 
         response.set_cookie(key="access_token", value=jwt_token)
         return {"access_token": jwt_token, "token_type": "bearer"}
-       # return {"message": "Login bem-sucedido"}
 
     raise HTTPException(status_code=401, detail="Senha Errada")
 
