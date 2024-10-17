@@ -19,13 +19,13 @@ armazenar as tarefas de maneira persistente.
 estejam corretas e evitar erros (ex.: uma tarefa não pode ter título vazio).
 
 ## TO-DO-LIST
-<X> API com CRUD de usuarios e tarefas
-<X> Banco de dados relacional (Postgres)
-<X> JWT usuarios
-<X> JWT com cookies
-<X> Front-end ligado a API
-<X> Validação de dados no Front-end
-<X> Tarefas utilizando o cache do redis
-<> Usuarios utilizando o caceh do redis
-<> Deploy na nuvem (Infelizmente não consegui pegar nenhuma)
-<> Deslogar usuario quando o token expirar
+- [x] API com CRUD de usuarios e tarefas
+- [x] Banco de dados relacional (Postgres)
+- [x] JWT usuarios
+- [x] JWT com cookies
+- [x] Front-end ligado a API
+- [x] Validação de dados no Front-end
+- [x] Tarefas utilizando o cache do redis
+- [ ] Usuarios utilizando o caceh do redis
+- [ ] Deploy na nuvem (Infelizmente não consegui pegar nenhuma)
+- [ ] Deslogar usuario quando o token expirar
